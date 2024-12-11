@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Sinais</title>
+  <style>
+    /* Resetando o estilo padrão */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000000; /* Preto puro */
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .top-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #00ff00; /* Bordas verdes ascendentes */
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.7); /* Efeito brilhante ao redor da imagem */
+    }
+
+    .description {
+      font-size: 18px;
+      color: #bbb;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .buttons-container {
+      display: flex;
+      flex-direction: column; /* Alinha os botões um abaixo do outro */
+      gap: 15px; /* Diminui o espaço entre os botões */
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px; /* Botões menores */
+      font-size: 16px; /* Tamanho da fonte menor */
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 8px;
+      background-color: #000; /* Fundo preto nos botões */
+      color: white;
+      border: 3px solid #00ff00; /* Bordas verdes ascendentes */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.6); /* Bordas brilhantes nos botões */
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Efeito de pulsação para os botões */
+    .btn {
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="sua-imagem.jpg" alt="Imagem da Plataforma" class="top-image">
+    </div>
+    <div class="description">
+      <p>💰 Ganhe dinheiro com a minha Sala de Sinais Gratuita! 🚀</p>
+      <p>Comece a fazer lucros agora, sem pagar nada! 💸</p>
+      <p>📈 Aproveite sinais 100% garantidos, sem usar nenhuma outra plataforma! Só funciona nesta plataforma indicada. 🔥</p>
+    </div>
+    <div class="buttons-container">
+      <a href="https://abre.ai/linkparaacessarjogo" class="btn">ACESSAR PLATAFORMA</a>
+      <a href="https://t.me/minessinalvip1" class="btn">ACESSAR SALA DE SINAIS</a>
+    </div>
+  </div>
+</body>
+</html>
