@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganhei 40.000 Meticais em Um Dia</title>
+    <style>
+        /* Reset de Estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px;
+            background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Animações */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Título */
+        .title {
+            font-size: 60px;
+            font-weight: 900;
+            color: #ff6f00;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            text-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Descrição */
+        .description {
+            font-size: 20px;
+            color: #c7c7c7;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            animation: fadeInUp 1.5s ease-out;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Imagem */
+        .image-container {
+            margin-bottom: 40px;
+            animation: zoomIn 1s ease-out;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+        }
+
+        /* Botões principais */
+        .cta-button {
+            display: inline-block;
+            background: #ff6f00;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            margin: 15px 0;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #ff9800;
+            transform: translateY(-5px);
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: #ff6f00;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+            transform: translate(-50%, -50%) scale(1);
+            z-index: -1;
+        }
+
+        .cta-button:hover::before {
+            transform: translate(-50%, -50%) scale(0);
+        }
+
+        /* Botão WhatsApp */
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25d366;
+            color: #fff;
+            font-size: 18px;
+            padding: 20px 40px;
+            border-radius: 50px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128c7e;
+            transform: translateY(-3px);
+        }
+
+        .whatsapp-button:active {
+            transform: translateY(1px);
+        }
+
+        /* Footer */
+        .footer {
+            font-size: 14px;
+            color: #b0b0b0;
+            margin-top: 40px;
+            opacity: 0.7;
+        }
+
+        .footer a {
+            color: #ff6f00;
+            text-decoration: none;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 48px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .cta-button, .whatsapp-button {
+                font-size: 16px;
+                padding: 15px 30px;
+            }
+
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Informações adicionais de bônus */
+        .bonus-info {
+            font-size: 16px;
+            color: #c7c7c7;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        /* Ajuste no botão */
+        .cta-button-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Título -->
+        <div class="title">
+            Ganhei <span>40.000 Meticais</span> em Um Dia
+        </div>
+
+        <!-- Descrição -->
+        <div class="description">
+            <p>Com o nosso grupo de sinais, você pode aprender a gerar lucros de até 1000MT por dia. Entre agora e comece a melhorar seus resultados em apostas.</p>
+        </div>
+
+        <!-- Imagem -->
+        <div class="image-container">
+            <img src="look.jpg" alt="Imagem de sinais para ganhos" />
+        </div>
+
+        <!-- Informações sobre o bônus -->
+        <div class="bonus-info">
+            Ganhe até 300MT de bônus no seu primeiro depósito de 100MT
+        </div>
+
+        <!-- Botão Clique Aqui -->
+        <div class="cta-button-wrapper">
+            <a href="https://tinyurl.com/300mtgratis" class="cta-button">Clique Aqui e pegue o bônus </a>
+        </div>
+
+        <!-- Botões principais -->
+        <div class="cta-button-wrapper">
+            <a href="https://t.me/minesmozsinais" class="cta-button">Entrar no grupo  de sinais</a>
+        </div>
+
+        <!-- Botão WhatsApp -->
+        <a href="https://wa.me/258867245980" class="whatsapp-button">Suporte via WhatsApp</a>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2025 Ganhei 40.000 Meticais. Todos os direitos reservados.</p>
+            <p>Visite nosso <a href="https://t.me/minesmozsinais">canal de sinais</a> para mais informações.</p>
+        </div>
+    </div>
+
+</body>
+</html>
